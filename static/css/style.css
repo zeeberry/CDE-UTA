@@ -36,10 +36,15 @@
 
 	    /* Downsize the brand/project name a bit */
 	    .navbar .brand {
-	      padding: 14px 20px 16px; /* Increase vertical padding to match navbar links */
+	      padding: 10px 20px 10px; /* Increase vertical padding to match navbar links */
 	      font-size: 16px;
 	      font-weight: bold;
 	      text-shadow: 0 -1px 0 rgba(0,0,0,.5);
+	    }
+	    .navbar .brand img{
+	    	width: 25px;
+	    	height: 30px;
+	    	padding-right: 5px;
 	    }
 
 	    /* Navbar links: increase padding for taller navbar */
@@ -127,7 +132,7 @@
 	    ------------------------- */
 
 	    .featurette-divider {
-	      margin: 80px 0; /* Space out the Bootstrap <hr> more */
+	      margin: 50px 0; /* Space out the Bootstrap <hr> more */
 	    }
 	    .featurette {
 	      padding-top: 50px; /* Vertically center images part 1: add padding above and below text. */
@@ -151,7 +156,15 @@
 	      font-weight: 300;
 	      line-height: 1;
 	      letter-spacing: -1px;
+
 	    }
+
+	    /*Footer
+	    -----------------------------*/
+	    footer .row .span4 {
+	      text-align: left;
+	    }
+
 
 
 
