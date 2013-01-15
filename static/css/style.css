@@ -3,7 +3,7 @@
 	    /* Padding below the footer and lighter body text */
 
 	    body {
-	      padding-bottom: 40px;
+	      padding-bottom: 20px;
 	      color: #5a5a5a;
 	    }
 
@@ -40,6 +40,7 @@
 	      font-size: 16px;
 	      font-weight: bold;
 	      text-shadow: 0 -1px 0 rgba(0,0,0,.5);
+	      color: #ffc671;
 	    }
 	    .navbar .brand img{
 	    	width: 25px;
@@ -133,6 +134,14 @@
 	      margin-right: 10px;
 	    }
 
+	    /*About
+	    -------------------------- */
+	    .about-container{
+	    	padding-top: 120px;
+	    	/*padding-bottom: 50px;*/
+
+	    }
+
 
 	    /* Featurettes
 	    ------------------------- */
@@ -145,7 +154,7 @@
 	      overflow: hidden; /* Vertically center images part 2: clear their floats. */
 	    }
 	    .featurette-image {
-	      margin-top: 50px; /* Vertically center images part 3: negative margin up the image the same amount of the padding to center it. */
+	      margin-top: 10px; /* Vertically center images part 3: negative margin up the image the same amount of the padding to center it. */
 	    }
 
 	    /* Give some space on the sides of the floated elements so text doesn't run right into it. */
@@ -169,6 +178,12 @@
 	    -----------------------------*/
 	    footer .row .span4 {
 	      text-align: left;
+	    }
+	    footer{
+	    	color: #a6a6a6;
+	    }
+	    .footer-divider {
+	      margin: 120px 0px 30px 0; /* Space out the Bootstrap <hr> more */
 	    }
 	    
 
