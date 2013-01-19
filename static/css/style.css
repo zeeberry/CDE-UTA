@@ -1,271 +1,139 @@
- /* GLOBAL STYLES
-	    -------------------------------------------------- */
-	    /* Padding below the footer and lighter body text */
+/*
+HTML 5 Template Name: Basic 28
+File: Layout CSS
+Author: OS Templates
+Author URI: http://www.os-templates.com/
+Licence: <a href="http://www.os-templates.com/template-terms">Website Template Licence</a>
+*/
 
-	    body {
-	      padding-bottom: 20px;
-	      color: #5a5a5a;
-	    }
+html{overflow-y:scroll;} /* Forces a scrollbar when the viewport is larger than the websites content - CSS3 */
 
+body{margin:0; padding:0; font-size:15px; font-family:Georgia, "Times New Roman", Times, serif; color:#919191; background-color:#041528;}
 
+.clear:after{content:"."; display:block; height:0; clear:both; visibility:hidden; line-height:0;}
+.clear{display:block; clear:both;}
+html[xmlns] .clear{display:block;}
+* html .clear{height:1%;}
 
-	    /* CUSTOMIZE THE NAVBAR
-	    -------------------------------------------------- */
+a{outline:none; text-decoration:none;}
 
-	    /* Special class on .container surrounding .navbar, used for positioning it into place. */
-	    .navbar-wrapper {	
-	      position: absolute;
-	      top: 0;
-	      left: 0;
-	      right: 0;
-	      z-index: 10;
-	      margin-top: 20px;
-	      margin-bottom: -90px; /* Negative margin to pull up carousel. 90px is roughly margins and height of navbar. */
-	    }
-	    .navbar-wrapper .navbar {
+code{font-weight:normal; font-style:normal; font-family:Georgia, "Times New Roman", Times, serif;}
 
-	    }
+.fl_left{float:left;}
+.fl_right{float:right;}
 
-	    /* Remove border and change up box shadow for more contrast */
-	    .navbar .navbar-inner {
-	      border: 0;
-	      -webkit-box-shadow: 0 2px 10px rgba(0,0,0,.25);
-	         -moz-box-shadow: 0 2px 10px rgba(0,0,0,.25);
-	              box-shadow: 0 2px 10px rgba(0,0,0,.25);
-	    }
+img{margin:0; padding:0; border:none; line-height:normal; vertical-align:middle;}
+.imgholder, .imgl, .imgr{padding:4px; border:1px solid #D6D6D6; text-align:center;}
+.imgl{float:left; margin:0 15px 15px 0; clear:left;}
+.imgr{float:right; margin:0 0 15px 15px; clear:right;}
 
-	    /* Downsize the brand/project name a bit */
-	    .navbar .brand {
-	      padding: 10px 20px 10px; /* Increase vertical padding to match navbar links */
-	      font-size: 16px;
-	      font-weight: bold;
-	      text-shadow: 0 -1px 0 rgba(0,0,0,.5);
-	      color: #ffc671;
-	    }
-	    .navbar .brand img{
-	    	width: 25px;
-	    	height: 30px;
-	    	padding-right: 5px;
-	    }
+/*----------------------------------------------HTML 5 Overrides-------------------------------------*/
 
-	    /* Navbar links: increase padding for taller navbar */
-	    .navbar .nav > li > a {
-	      padding: 15px 20px;
-	    }
+address, article, aside, figcaption, figure, footer, header, hgroup, nav, section{display:block; margin:0; padding:0;}
 
-	    /* Offset the responsive button for proper vertical alignment */
-	    .navbar .btn-navbar {
-	      margin-top: 10px;
-	    }
+q{display:block; padding:0 10px 8px 10px; color:#979797; background-color:#ECECEC; font-style:italic; line-height:normal;}
+q:before{content:'“ '; font-size:26px;}
+q:after{content:' „'; font-size:26px; line-height:0;}
 
+/* ----------------------------------------------Wrapper-------------------------------------*/
 
+div.wrapper{display:block; width:100%; margin:0; padding:0; text-align:left;}
 
-	    /* CUSTOMIZE THE NAVBAR
-	    -------------------------------------------------- */
+.row1, .row1 a{color:#C0BAB6; background-color:#06213f;}
+.row2{color:#979797; background-color:#FFFFFF;}
+.row2 a{color:#FF9900; background-color:#FFFFFF;}
+.row3, .row3 a{color:#919191; background-color:#041528;}
 
-	    /* Carousel base class */
-	    .carousel {
-	      margin-bottom: 60px;
-	    }
+/*----------------------------------------------Generalise-------------------------------------*/
 
-	    .carousel .container {
-	      position: relative;
-	      z-index: 9;
-	    }
+#header, #container, #footer{display:block; width:960px; margin:0 auto;}
 
-	    .carousel-control {
-	      height: 80px;
-	      margin-top: 0;
-	      font-size: 120px;
-	      text-shadow: 0 1px 1px rgba(0,0,0,.4);
-	      background-color: transparent;
-	      border: 0;
-	    }
+nav ul{margin:0; padding:0; list-style:none;}
 
-	    .carousel .item {
-	      height: 500px;
-	    }
-	    .carousel img {
-	      position: absolute;
-	      top: 0;
-	      left: 0;
-	      min-width: 100%;
-	      height: 500px;
-	    }
+h1, h2, h3, h4, h5, h6{margin:0; padding:0; font-size:16px; font-weight:bold; font-style:normal; line-height:normal; text-transform:uppercase;}
 
-	    .carousel-caption {
-	      background-color: transparent;
-	      position: static;
-	      max-width: 550px;
-	      padding: 0 20px;
-	      margin-top: 250px;
-	    }
-	    .carousel-caption h1,
-	    .carousel-caption .lead {
-	      margin: 0;
-	      line-height: 1.25;
-	      color: #fff;
-	      text-shadow: 0 1px 1px rgba(0,0,0,.4);
-	    }
-	    .carousel-caption .btn {
-	      margin-top: 10px;
-	    }
+address{font-style:normal;}
+
+blockquote, q{display:block; padding:8px 10px; color:#979797; background-color:#ECECEC; font-style:italic; line-height:normal;}
+blockquote:before, q:before{content:'“ '; font-size:26px;}
+blockquote:after, q:after{content:' „'; font-size:26px; line-height:0;}
+
+form, fieldset, legend{margin:0; padding:0; border:none;}
+legend{display:none;}
+input, textarea, select{font-size:12px; font-family:Georgia,"Times New Roman",Times,serif;}
+
+.one_quarter, .two_quarter, .three_quarter, .four_quarter{display:block; float:left; margin:0 20px 0 0;}
+.one_quarter{width:225px;}
+.two_quarter{width:470px;}
+.three_quarter{width:715px;}
+.four_quarter{width:960px; float:none; margin-right:0; clear:both;}
+
+.one_third, .two_third, .three_third{display:block; float:left; margin:0 30px 0 0;}
+.one_third{width:280px;}
+.two_third{width:630px;}
+.three_third{width:960px; float:none; margin-right:0; clear:both;}
+
+.lastbox{margin-right:0;}
+
+/*----------------------------------------------Header-------------------------------------*/
+
+#header{padding:20px 0;}
+
+#header hgroup{float:left; margin:0 0 20px 0;}
+#header hgroup h1, #header hgroup h2{font-weight:normal; text-transform:none;}
+#header hgroup h1{font-size:36px;}
+#header hgroup h2{font-size:15px;padding-left: 100px;}
+#header hgroup img{width: 45px; height: 55px; padding-right: 10px;}
 
 
 
-	    /* MARKETING CONTENT
-	    -------------------------------------------------- */
+#header nav{display:block; float:right; margin:10px 0 0 0; padding:20px 0; color:#C0BAB6; background-color:#041528;}
+#header nav ul{padding:0 40px;}
+#header nav li{display:inline; margin-right:25px; text-transform:uppercase;}
+#header nav li.last{margin-right:0;}
+#header nav li a{color:#C0BAB6; background-color:#041528;}
+#header nav li a:hover{color:#FF9900; background-color:#041528;}
 
-	    /* Center align the text within the three columns below the carousel */
-	    .marketing .span4 {
-	      text-align: center;
-	    }
-	    .marketing h2 {
-	      font-weight: normal;
-	    }
+/*----------------------------------------------Content Area-------------------------------------*/
 
-	    .marketing h4 {
-	      font-weight: normal;
-	      font-size: 1.2em;
-	    }
+#container{padding:30px 0;}
+#container section{display:block; width:100%; margin:0 0 50px 0; padding:0;}
+#container .last{margin:0;}
+#container .more{text-align:right;}
 
-	    .marketing .span4 p {
-	      margin-left: 10px;
-	      margin-right: 10px;
-	    }
+/* ------Slider-----*/
 
-	    /*About
-	    -------------------------- */
-	    .about-container{
-	    	padding-top: 120px;
-	    	/*padding-bottom: 50px;*/
+#container #slider{}
+#container #slider figure{}
+#container #slider figure img{float:right; width:630px; height:300px;}
+#container #slider figure figcaption{display:block; float:left; width:280px; height:260px; padding:20px; overflow:hidden; color:#989898; background-color:#DEDEDE; line-height:1.6em;}
+#container #slider figure figcaption a{color:#FF9900; background-color:#DEDEDE;}
+#container #slider figure h2{font-size:36px; font-weight:normal; font-style:italic; text-transform:none; color:#787878;}
+#container #slider figure p{font-size:16px;}
+#container #slider figure footer{}
 
-	    }
+/* ------Main Content-----*/
 
+#container #homepage{display:block; width:100%; line-height:1.6em;}
 
-	    /* Featurettes
-	    ------------------------- */
-
-	    .featurette-divider {
-	      margin: 50px 0; /* Space out the Bootstrap <hr> more */
-	    }
-	    .featurette {
-	      padding-top: 50px; /* Vertically center images part 1: add padding above and below text. */
-	      overflow: hidden; /* Vertically center images part 2: clear their floats. */
-	    }
-	    .featurette-image {
-	      margin-top: 10px; /* Vertically center images part 3: negative margin up the image the same amount of the padding to center it. */
-	    }
-
-	    /* Give some space on the sides of the floated elements so text doesn't run right into it. */
-	    .featurette-image.pull-left {
-	      margin-right: 40px;
-	    }
-	    .featurette-image.pull-right {
-	      margin-left: 40px;
-	    }
-
-	    /* Thin out the marketing headings */
-	    .featurette-heading {
-	      font-size: 50px;
-	      font-weight: 300;
-	      line-height: 1;
-	      letter-spacing: -1px;
-
-	    }
-
-	    /*Footer
-	    -----------------------------*/
-	    footer .row .span4 {
-	      text-align: left;
-	    }
-	    footer{
-	    	color: #a6a6a6;
-	    }
-	    .footer-divider {
-	      margin: 120px 0px 30px 0; /* Space out the Bootstrap <hr> more */
-	    }
-	    
+#container #homepage #services{}
+#container #homepage #services article{}
+#container #homepage #services article h2{font-size:1.125em; margin-bottom:15px; color:#787878; text-align: center;}
+#container #homepage #services article p{margin:0; padding:20px 10px 0 10px; text-align: center;}
+#container #homepage #services article img{float:left; width:80px; height:80px; margin:0 10px 10px 0; padding:4px; border:1px solid #DEDEDE;}
+#container #homepage #services article footer{margin:10px 0 0 0;}
+#container #homepage #services article .lead{line-height: 1.5;font-size: 18px;}
 
 
-	    /* RESPONSIVE CSS
-	    -------------------------------------------------- */
+#container #homepage #latest{}
+#container #homepage #latest article{}
+#container #homepage #latest article figure{}
+#container #homepage #latest article figure img{margin:0 0 10px 0; padding:4px; border:1px solid #D6D6D6;}
+#container #homepage #latest article figure figcaption{}
+#container #homepage #latest article figure h2{font-size:14px;}
+#container #homepage #latest article figure footer{}
 
-	    @media (max-width: 979px) {
+/*----------------------------------------------Footer-------------------------------------*/
 
-	      .container.navbar-wrapper {
-	        margin-bottom: 0;
-	        width: auto;
-	      }
-	      .navbar-inner {
-	        border-radius: 0;
-	        margin: -20px 0;
-	      }
-
-	      .carousel .item {
-	        height: 500px;
-	      }
-	      .carousel img {
-	        width: auto;
-	        height: 500px;
-	      }
-
-	      .featurette {
-	        height: auto;
-	        padding: 0;
-	      }
-	      .featurette-image.pull-left,
-	      .featurette-image.pull-right {
-	        display: block;
-	        float: none;
-	        max-width: 40%;
-	        margin: 0 auto 20px;
-	      }
-	    }
-
-
-	    @media (max-width: 767px) {
-
-	      .navbar-inner {
-	        margin: -20px;
-	      }
-
-	      .carousel {
-	        margin-left: -20px;
-	        margin-right: -20px;
-	      }
-	      .carousel .container {
-
-	      }
-	      .carousel .item {
-	        height: 300px;
-	      }
-	      .carousel img {
-	        height: 300px;
-	      }
-	      .carousel-caption {
-	        width: 65%;
-	        padding: 0 70px;
-	        margin-top: 100px;
-	      }
-	      .carousel-caption h1 {
-	        font-size: 30px;
-	      }
-	      .carousel-caption .lead,
-	      .carousel-caption .btn {
-	        font-size: 18px;
-	      }
-
-	      .marketing .span4 + .span4 {
-	        margin-top: 40px;
-	      }
-
-	      .featurette-heading {
-	        font-size: 30px;
-	      }
-	      .featurette .lead {
-	        font-size: 18px;
-	        line-height: 1.5;
-	      }
-
-	    }
+#footer{padding:20px 0;}
+#footer p{margin:0; padding:0;}

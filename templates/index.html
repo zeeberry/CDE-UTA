@@ -1,90 +1,40 @@
 {% extends "layout.html" %}
 {% block content %}
-  
-    <!-- Carousel
-    ================================================== -->
-    <div id="myCarousel" class="carousel slide">
-      <div class="carousel-inner">
-        <div class="item active">
-          <img src="static/img/uta.jpg" alt="">
-          <div class="container">
-            <div class="carousel-caption">
-              <h1>Centro de Escritura</h1>
-              <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-            </div>
-          </div>
-        </div>
-        <div class="item">
-          <img src="../assets/img/examples/slide-02.jpg" alt="">
-          <div class="container">
-            <div class="carousel-caption">
-              <h1>Another example headline.</h1>
-              <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-              <a class="btn btn-large btn-primary" href="#">Learn more</a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <a class="left carousel-control" href="#myCarousel" data-slide="prev">&lsaquo;</a>
-      <a class="right carousel-control" href="#myCarousel" data-slide="next">&rsaquo;</a>
-    </div><!-- /.carousel -->
-
-
-
-    <!-- Marketing messaging and featurettes
-    ================================================== -->
-    <!-- Wrap the rest of the page in another container to center all the content. -->
-
-    <div class="container marketing">
-
-      <!-- Three columns of text below the carousel -->
-      <div class="row">
-        <div class="span4">
-          <img class="img-circle" data-src="holder.js/140x140">
-          <h2>Quienes Somos</h2>
-          <p>El Centro de Escritura de la Universidad de Tarapaca ayuda a desarrollar y fortalecer sus habilidades de escritura para enfrentar exitosamente los retos académicos y profesionales. 
-          
-        </div><!-- /.span4 -->
-        <div class="span4">
-          <img class="img-circle" data-src="holder.js/140x140">
-          <h2>Horario de Atencion </h2>
+ <div id="container" class="clear">
+    <!-- Slider -->
+    <section id="slider" class="clear">
+      <figure><img src="{{ url_for('static', filename='img/630x300.jpg') }}" alt="">
+        <figcaption>
+          <h2>Quienes Somos?</h2>
+          <p>El Centro de Escritura de la Universidad de Tarapaca ayuda a desarrollar y fortalecer sus habilidades de escritura para enfrentar exitosamente los retos academicos y profesionales.</p>
+          <footer class="more"><a href="#">Leer mas &raquo;</a></footer>
+        </figcaption>
+      </figure>
+    </section>
+    <!-- main content -->
+    <div id="homepage">
+      <!-- services area -->
+      <section id="services" class="clear">
+        <!-- article 1 -->
+        <article class="one_third">
+          <h2>Horario de Atencion</h2>
+          <!-- <img src="images/demo/80x80.gif" alt=""> -->
           <p class="lead">Lunes - Viernes <br>08:30 - 13:00 <br>14:30 - 18:30</p>
-          
-        </div><!-- /.span4 -->
-        <div class="span4">
-          <img class="img-circle" data-src="holder.js/140x140">
-          <h2>¿Necesitas un tutor?</h2>
-          <p> Planifica un hora con nosotros escribiendo a<br><p class="lead">centrodeescritura@uta.cl</p> Las sesiones tienen una duracion de <strong>30</strong> - <strong>35</strong> minutos.</p>
-          
-        </div><!-- /.span4 -->
-      </div><!-- /.row -->
-
-
-      <!-- START THE FEATURETTES -->
-
-      <hr class="featurette-divider">
-
-      <div class="featurette">
-        <div class="featurette-image pull-right"> 
-          <iframe width="560" height="315" src="http://www.youtube.com/embed/cIQdhXkv1ZQ" frameborder="0" allowfullscreen></iframe>
-          <!-- <iframe width="560" height="315" src="http://www.youtube.com/embed/Pr3tVmulJgc" frameborder="0" allowfullscreen></iframe>  -->
-        </div>
-        <h2 class="featurette-heading">Universidad de Tarapaca. <span class="muted">It'll blow your mind.</span></h2>
-        <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-      </div>
-      
-
-      <!-- /END THE FEATURETTES -->
-
-    <!-- Le javascript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script>
-      !function ($) {
-        $(function(){
-          // carousel demo
-          $('#myCarousel').carousel()
-        })
-      }(window.jQuery)
-    </script>
+          <!-- <footer class="more"><a href="#">Read More &raquo;</a></footer> -->
+        </article>
+        <!-- article 2 -->
+        <article class="one_third">
+          <h2>&iquest;Necesitas un tutor?</h2>
+          <!-- <img src="images/demo/80x80.gif" alt=""> -->
+          <p> Planifica un hora con nosotros escribiendo a<br>centrodeescritura@uta.cl<br> Las sesiones tienen una duracion de <strong>30</strong> - <strong>35</strong> minutos.</p>
+          <!-- <footer class="more"><a href="#">Read More &raquo;</a></footer> -->
+        </article>
+        <!-- article 3 -->
+        <article class="one_third lastbox">
+          <h2>Lorum ipsum dolor</h2>
+          <!-- <img src="images/demo/80x80.gif" alt=""> -->
+          <iframe width="300" height="215" src="http://www.youtube.com/embed/cIQdhXkv1ZQ" frameborder="0" allowfullscreen></iframe>
+          <!-- <footer class="more"><a href="#">Read More &raquo;</a></footer> -->
+        </article>
+      </section>
 {% endblock %}
