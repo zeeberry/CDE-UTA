@@ -7,9 +7,17 @@ app = Flask(__name__)
 def home():
     return render_template('index.html')
 
-# @app.route('/nosotros')
-# def about():
-#     return render_template('nosotros.html')
+@app.route('/nosotros')
+def about():
+    return render_template('nosotros.html')
+
+@app.route('/recursos')
+def resources():
+    return render_template('recursos.html')
+
+@app.route('/eventos')
+def events():
+    return render_template('eventos.html')
 
 
 if __name__ == '__main__':

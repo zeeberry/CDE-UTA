@@ -1,0 +1,88 @@
+{% extends "layout.html" %}
+{% block content %}
+<div id="about">
+      <!-- services area -->
+      <section id="services" class="clear">
+        <!-- article 1 -->
+        <article class="two_third">
+          <h2>Nuestra Mission</h2>	
+          <hr class="faded" />
+          <h3>El Centro de Escritura</h3>
+          <!-- <img src="images/demo/80x80.gif" alt=""> -->
+			<p>La Universidad de Tarapacá en la evidencia de que existe a nivel universitario un número de alumnos con capacidades y talentos insospechados para el mundo académico, asume el compromiso de incorporar un nuevo insumo: el Centro de Escritura.</p>
+			<p>No es un secreto que los docentes solicitan trabajos esperando que sus alumnos cumplan con sus expectativas de logro, mientras que los estudiantes realizan lo que ellos entienden por trabajo escrito, proyectando lo que hicieron en los últimos años de enseñanza media, ignorando que se trata de una metodología de trabajo distinta. Esa es la razón por la cual, en Universidades extranjeras se cuenta con este tipo de apoyo al estudiante, centros de escritura, donde los alumnos aprenden a redactar y estructurar sus trabajos desde primer año, hasta su trabajo de investigación final o tesis de grado.</p>
+        
+          <h3>Programa de Formación de Tutores y Tutoras de Escritura Académica</h3>
+          <!-- <img src="images/demo/80x80.gif" alt=""> -->
+			<p>En el contexto de las orientaciones del Departamento de Docencia de Pregrado de la Universidad de Tarapacá, se fundamenta en asumir el desafío de incorporar en la comunidad universitaria una nueva orientación pedagógica: el desarrollo de competencias en el área de la Escritura Académica.
+			El Programa de enseñanza tutorial está destinado, en su primera versión piloto, a un grupo de estudiantes seleccionados en virtud de su interés para orientar a sus pares en la elaboración de sus trabajos académicos y propiciar el desarrollo de una cultura discursiva en el ámbito universitario y profesional.</p>
+          
+          <h3>Objetivos específicos:</h3>
+          <!-- <img src="images/demo/80x80.gif" alt=""> -->
+          <ol>
+          	<li>Potenciar la formación de recurso humano en dos aspectos: Favorecer la capacitación de los profesores de las diferentes especialidades en la enseñanza de la lectura y escritura mientras imparte sus asignaturas específicas y en el desarrollo de habilidades de escritura en tutores.</li>
+          <li>Desarrollar protocolos de asesoramiento en prácticas de escritura académica y documentos destinados tanto a estudiantes como a académicos de las carreras del plan piloto.</li>
+	 	  <li>Diseñar e implementar la plataforma virtual del centro de escritura.</li>
+		  <li>Gestionar Charlas, seminarios, talleres, clases magistrales en el área de la escritura.</li>
+
+
+          <!-- <footer class="more"><a href="#">Read More &raquo;</a></footer> -->
+        </article>
+
+        <article class="one_third lastbox">
+         	<h3>Personal del Centro</h3>
+         	<hr class="faded" />
+         	<figure>
+         		<img src="{{ url_for('static', filename='img/mmorales.png') }}" alt="">
+			  	<figcaption>
+			  		Marlene Morales
+			  	</figcaption>
+		  	</figure>
+
+		  	<figure>
+			  	<img src="{{ url_for('static', filename='img/fvillegas.png') }}" alt="">
+			  	<figcaption>
+			  		Fco. Javier Villegas
+			  	</figcaption>
+		  	</figure>
+
+		  	<figure>
+		  		<img src="{{ url_for('static', filename='img/rbustos.png') }}" alt="">
+		  		<figcaption>
+			  		 Raùl Bustos González
+			  	</figcaption>
+         	</figure>
+
+         	<h3>Tutores</h3>
+         	<hr class="faded" />
+
+		  	<figure>
+		  	<img src="{{ url_for('static', filename='img/dcastillo.png') }}" alt="">
+		  		<figcaption>
+			  		Dallana Castillo
+			  	</figcaption>
+		  	</figure>
+		  	<figure>
+		  	<img src="{{ url_for('static', filename='img/kguerrero.png') }}" alt="">
+		  		<figcaption>
+			  		Kathy Guerrero
+			  	</figcaption>
+		  	</figure>
+		  	<figure>
+		  	<img src="{{ url_for('static', filename='img/mperez.png') }}" alt="">
+		  		<figcaption>
+			  		Marcela Pérez
+			  	</figcaption>
+		  	</figure>
+		  	<figure>
+		  	<img src="{{ url_for('static', filename='img/nbobadilla.png') }}" alt="">
+		  		<figcaption>
+			  		Natalia Bobadilla
+			  	</figcaption>
+		  	</figure>
+		  </article>
+      </section>
+
+
+
+{% endblock %}

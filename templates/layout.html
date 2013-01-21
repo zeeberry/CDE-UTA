@@ -16,16 +16,18 @@
     </hgroup>
     <nav>
       <ul>
-        <li><a href="#"> Inicio </a></li>
-        <li><a href="#">Quienes Somos</a></li>
-        <li><a href="#"> Recursos </a></li>
-        <li class="last"><a href="#"> Eventos </a></li>
+        <li class="active"><a href="{{ url_for('home') }}"> Inicio </a></li>
+        <li><a href="{{ url_for('about') }}">Quienes Somos</a></li>
+        <li><a href="{{ url_for('resources') }}"> Recursos </a></li>
+        <li class="last"><a href="{{ url_for('events') }}"> Eventos </a></li>
       </ul>
     </nav>
   </header>
 </div>
 <!-- content -->
 <div class="wrapper row2">
+   <div id="container" class="clear">
+
 
         {% block content %}{% endblock %}
 
@@ -38,19 +40,20 @@
   <footer id="footer" class="clear">
     <div class="one_third">
       <strong>Centro de Escritura</strong>
+
             <address>
-              Edmundo Flores N xxx<br>
-              Campus Saucache <br> 
-              Codigo Postal xxxx
+              Edmundo Flores N 1234<br>
+              Campus Saucache <br>
+              Codigo Postal 100000
             </address>
     </div>
     <div class="one_third">
-      <strong>Contacto</strong></p>
-      <p>telefono &middot; 202112 <br> email &middot; <a href="mailto:#">centrodeescritura@uta.cl</a>
+      <strong>Contacto</strong><br>
+      telefono &middot; 202112 <br> email &middot; <a href="mailto:#">centrodeescritura@uta.cl</a>
     </div>
     <div class="one_third">
-      <p><strong>&copy;Copyright 2013</strong></p>
-      <p>Todos los derechos reservados <br>Diseñado y desarrollado por<br>Olivares y Asociados</p>
+      &copy;Copyright 2013<br>
+      Todos los derechos reservados <br>Diseñado y desarrollado por<br>Olivares y Asociados
     </div>
     </footer>
 </div>
