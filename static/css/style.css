@@ -135,10 +135,10 @@ hr.faded {
 
 #container #slider{}
 #container #slider figure{}
-#container #slider figure img{float:right; width:630px; height:300px;}
-#container #slider figure figcaption{display:block; float:left; width:280px; height:260px; padding:20px; overflow:hidden; color:#989898; background-color:#DEDEDE; line-height:1.6em;}
+#container #slider figure img{float:left; width:630px; height:300px;}
+#container #slider figure figcaption{display:block; float:right; width:280px; height:260px; padding:20px; overflow:hidden; color:#989898; background-color:#DEDEDE; line-height:1.6em;}
 #container #slider figure figcaption a{color:#FF9900; background-color:#DEDEDE;}
-#container #slider figure h2{font-size:36px; font-weight:normal; font-style:italic; text-transform:none; color:#787878;}
+#container #slider figure h2{font-size:30px; font-weight:normal; font-style:italic; text-transform:none; color:#787878;}
 #container #slider figure p{font-size:16px;}
 #container #slider figure footer{}
 
@@ -152,7 +152,9 @@ hr.faded {
 #container #homepage #services article p{margin:0; padding:5px 10px 0 10px; text-align: center;}
 #container #homepage #services article img{float:left; width:80px; height:80px; margin:0 10px 10px 0; padding:4px; border:1px solid #DEDEDE;}
 #container #homepage #services article footer{margin:10px 0 0 0;}
-#container #homepage #services article .lead{line-height: 1.5;font-size: 18px;}
+#container #homepage #services article p.lead{line-height: 1.5;font-size: 18px; letter-spacing: 1px; font-size: 1em; font-weight: lighter;}
+#container #homepage #services article.one_third strong {letter-spacing: 1px; font-size: 1em; font-weight: lighter; color: #787878; border-bottom: 1px dotted #FF9900; }
+
 
 #container #homepage #latest{}
 #container #homepage #latest article{}
@@ -169,14 +171,16 @@ hr.faded {
 #container #about #services article{}
 #container #about #services article h2{margin-bottom:15px; color:#787878; text-align: center; font-size:36px; font-weight:normal; font-style:italic; text-transform:none;}
 #container #about #services article h3{font-size:1em; margin: 15px 0px; text-align: left;}
+#container #about #services article.one_third h3{font-size:1em; margin: 15px 0px; text-align: center;}
 #container #about #services article p{margin:0; padding:5px 10px 0 10px; text-align: left; text-indent:50px;}
 #container #about #services article footer{margin:10px 0 0 0;}
-#container #about #services article .lead{line-height: 1.5;font-size: 18px;}
+#container #about #services article a{color:#919191;border-bottom:1px dotted #FF9900}
+#container #about #services article.lead{line-height: 1.5;font-size: 18px;}
 
 #container #about #services article figure{}
 #container #about #services article figure figcaption{display:block; float:right; width:160px; height:30px; padding:20px; margin-bottom: 10px; overflow:hidden; color:#989898; background-color:#DEDEDE; line-height:1.6em;}
 #container #about #services article figure p{padding:0px;}
-#container #about #services article figure img{float:left; width:60px; height:60px; margin:0 10px 10px 0; padding:4px; border:1px solid #DEDEDE;}
+#container #about #services article figure img{float:left; width:60px; height:60px; margin:0 10px 10px 0; padding:4px; border:1px dotted #FF9900;}
 /*----------------------------------------------Footer-------------------------------------*/
 
 #footer{padding:20px 0; font-size:0.9em; font-weight: lighter; line-height: 150%;}
